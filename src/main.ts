@@ -14,7 +14,7 @@ import { invariant } from './libs/utils';
 const pulumiVersion = '^3';
 
 const main = async () => {
-  const config = await makeConfig();
+  const config = makeConfig();
   core.debug('Configuration is loaded');
 
   await pulumiCli.downloadCli(pulumiVersion);
