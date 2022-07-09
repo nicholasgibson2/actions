@@ -3,6 +3,7 @@
 ## HEAD (Unreleased)
 
 - feat: add configuration of Pulumi stack by `configMap` field
+- feat: add ability to delete stack on `pulumi destroy` by passing `delete-stack: true`
 
 ---
 

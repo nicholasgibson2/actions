@@ -35,6 +35,7 @@ describe('config.ts', () => {
         "command": "up",
         "commentOnPr": false,
         "configMap": undefined,
+        "deleteStack": undefined,
         "githubToken": "n/a",
         "isPullRequest": false,
         "options": Object {
@@ -97,6 +98,7 @@ describe('config.ts', () => {
         "command": "up",
         "commentOnPr": true,
         "configMap": undefined,
+        "deleteStack": undefined,
         "githubToken": "n/a",
         "isPullRequest": false,
         "options": Object {
@@ -151,6 +153,7 @@ describe('config.ts', () => {
         "command": "up",
         "commentOnPr": false,
         "configMap": undefined,
+        "deleteStack": undefined,
         "githubToken": "n/a",
         "isPullRequest": true,
         "options": Object {

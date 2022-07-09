@@ -102,6 +102,8 @@ The action can be configured with the following arguments:
   will need to add back to source control as part of the action if you wish to
   perform any further tasks with that stack.
 
+- `delete-stack` - (optional) Delete stack after destroying resources with `destroy` command. Equivalent to `pulumi stack rm`.
+
 By default, this action will try to authenticate Pulumi with the
 [Pulumi SaaS](https://app.pulumi.com/). If you have not specified a
 `PULUMI_ACCESS_TOKEN` then you will need to specify an alternative backend via
