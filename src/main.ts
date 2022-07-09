@@ -76,7 +76,13 @@ const main = async () => {
     destroy: async () => {
       const { stdout, stderr } = await stack.destroy({ onOutput, ...config.options });
       if (config.deleteStack) {
-        await stack.workspace.removeStack(stack.name);
+        core.debug('deleting stack')
+        output = await stack.workspace.removeStack(stack.name);
+        core.debug(output)
+        core.debug('deleted stack')
+      }
+      else {
+        core.debug('do not delete stack')
       }
       return stdout;
     },
